@@ -45,4 +45,4 @@ Users should be able to:
 ## Author
 
 - Website - [tanferest](https://github.com/tanferest)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/tanferest)
