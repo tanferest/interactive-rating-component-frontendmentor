@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./styles/main.css" rel="stylesheet" type="text/css" />
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body class="body">
+    <p class="message hidden">Please, select an option before submit!</p>
+    <!-- Rating state start -->
+    <div class="container js-rating">
+      <div class="star">
+        <svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z"
+            fill="#FC7614"
+          />
+        </svg>
+      </div>
+      <h2 class="title">How did we do?</h2>
+      <p class="main-text">
+        Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve our offering!
+      </p>
+      <ul class="option-list">
+        <li id="1">
+          <input class="input js-input1" type="radio" value="1" name="rate" id="rate1" />
+          <label class="option" for="rate1">1</label>
+        </li>
+        <li id="2">
+          <input class="input js-input2" type="radio" value="2" name="rate" id="rate2" />
+          <label class="option" for="rate2">2</label>
+        </li>
+        <li id="3">
+          <input class="input js-input3" type="radio" value="3" name="rate" id="rate3" />
+          <label class="option" for="rate3">3</label>
+        </li>
+        <li id="4">
+          <input class="input js-input4" type="radio" value="4" name="rate" id="rate4" />
+          <label class="option" for="rate4">4</label>
+        </li>
+        <li id="5">
+          <input class="input js-input5" type="radio" value="5" name="rate" id="rate5" />
+          <label class="option" for="rate5">5</label>
+        </li>
+      </ul>
+      <button class="btn js-btn">Submit</button>
+    </div>
+
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+    <div class="container rated hidden">
+      <div class="image"></div>
+        <p class="js-selected">
+        </p>
+      <h2 class="title">Thank you!</h2>
+      <p class="main-text">
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don't hesitate to get in touch!
+      </p>
+    </div>
+
+    <!-- Thank you state end -->
+
+    <footer class="attribution">
+        <p>
+          Challenge by
+          <a class="link" href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >
+        </p>
+        <p>Coded by <a class="link" href="#">tanferest</a></p>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
